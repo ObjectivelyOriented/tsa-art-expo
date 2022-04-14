@@ -21,9 +21,8 @@ function ArtworkTemplate({ content, data }) {
     <Image
       src={frontmatter.image}
       alt="Picture of the author"
-      width={500}
-      height={500}
-
+      width='100%'
+      height='100%'
     />
     <br/>
       <ReactMarkdown children={content} />

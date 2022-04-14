@@ -1,8 +1,18 @@
 .dropdown {
   position: relative;
   display: inline-block;
-  padding-left:100px;
-  padding-right:100px;
+  padding-left:25px;
+  padding-right:25px;
+  height:20%;
+}
+
+.indexfeatured {
+  position: relative;
+  display: inline-block;
+  padding-left:25px;
+  padding-right:25px;
+  text-align:center;
+  justify-content:center;
 }
 
 .dropdown_content {
@@ -45,20 +55,23 @@ width:auto;
 .artflex{
 text-align:center;
   justify-content:center;
+  height:20%;
   
 }
 
 .title{
   text-align:center;
   font-weight:normal;
+  padding-left:20px;
+  padding-right:20px;
 }
 
 /*.featured:hover{
   box-shadow: 5px 10px 18px #594726;
 }*/
 .Images{
-  
-  flex:1;
+
+
   justify-content:center;
   display:block;
   #border-radius:3%;
