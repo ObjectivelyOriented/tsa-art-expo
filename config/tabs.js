@@ -20,7 +20,7 @@ const tabs = [
         path: "/gallery",
         icon: <FontAwesomeIcon icon ={faCompass} />
     },
-
+  
     {
         label:"About",
         path: "/about",

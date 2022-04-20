@@ -1,13 +1,30 @@
 .text{
-  justify-content:initial;
+
   padding:5%;
-color:black;
+
+ display: flex;
+ flex-direction: row;
+  //height:1000px;
+
+}
+.title{
+  font-size:25px;
+  margin:50px;
+  padding:20px;
 }
 .Images2{
-  
-
-width:300px;
+width:max-width;
+padding:20px;
+height:auto;
   
   border-radius:3%;
   
+}
+.content{
+margin:20px;
+    width: 50%;
+    float: right;
+    padding: 20px;
+    border: 2px solid red;
+  color:#594726;
 }

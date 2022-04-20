@@ -3,11 +3,11 @@ import IndexStyle from "../styles/Index.module.scss";
 import Link from "next/link";
 import Router from "next/router";
 import Image from "next/image";
-import myImg from './cafeterrace_HDcropped.jpeg'
-import myImg1 from './monalisa_HDcropped.jpeg'
-import myImg2 from './orientalpoppies_HDcropped.jpg'
-import myImg3 from './oldguitarist_HDcropped.jpeg'
-import myImg4 from './creationofadam_HDcropped.jpeg'
+import myImg from '../public/cafeterrace_HDcropped.jpeg';
+import myImg1 from '../public/monalisa_HDcropped.jpeg'
+import myImg2 from '../public/orientalpoppies_HDcropped.jpg'
+import myImg3 from '../public/oldguitarist_HDcropped.jpeg'
+import myImg4 from '../public/creationofadam_HDcropped.jpeg'
 import myImg5 from '../public/art_expo.png'
 
 
@@ -23,32 +23,24 @@ var randomImg = artArray[Math.floor(Math.random()*artArray.length)];
 
 const Index = () => 
 <Layout>
-   
-<h2 className = {IndexStyle.title}> Welcome to our TSA Art Gallery! </h2>
-<br/>
+    <div className = {IndexStyle.artflex}>
+      <br/>
+<h1 classname = {IndexStyle.title}> About the Gallery </h1><br/>
+      </div>
   <div className = {IndexStyle.featured}>
     <Image className = {IndexStyle.Images} src = {myImg5}/> 
   </div>
-  <h2 className = {IndexStyle.title}> About the Gallery </h2>
-  <div classname = {IndexStyle.title}>
+  <div className = {IndexStyle.artflex}>
+<br/>
+    <h2 classname = {IndexStyle.title}> About the Gallery </h2>
+  <div className = {IndexStyle.title}>
     This gallery is designed to help experience in person events at home! Due to the current restrictions in place for COVID-19, many people are unable to leave their homes and visit places and attractions such as art galleries. Our TSA Art Exposition is created so that people are still given the opportunity to visit such attractions without having to leave the comfort of their home.
       <br/>
     <br/>
 Currently, our project mostly features famous artists and their most reknowned artworks. This includes artists such as Leonardo da Vinci and Pablo Picasso. We also introduce the budding artist Pradyuman Iyer!
   </div>
-  <div classname = {IndexStyle.artflex}>
-  <h2 className = {IndexStyle.title}> Featured - </h2>  
-    <div className = {IndexStyle.indexfeatured}>
-    <a href="/Artworks/monalisa">
-  <Image 
-  className = {IndexStyle.Images2} 
-  src = {myImg1}
-  width={imgWidth}
-  height={imgHeight}
-  /> 
-  <p>Mona Lisa</p>
-    </a>
-    </div>
+<br/>
+    <h2 classname = {IndexStyle.title}> Featured </h2>
     
   <div className = {IndexStyle.indexfeatured}>
   <a href="/Artworks/orientalpoppies">
@@ -105,8 +97,8 @@ Currently, our project mostly features famous artists and their most reknowned a
   </a>
 
   </div>
-   
-</div>
+         <div className={IndexStyle.buffer}></div>
+  </div>
   
 </Layout>;
 export default Index;
